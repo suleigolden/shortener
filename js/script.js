@@ -22,3 +22,8 @@ function ShortURL() {
     "<label style='color:#5cb85c; margin-top:- 29px;'>Shorting URL.........</label>";
   }
 }
+function copyShortURL(){
+  var Url = _("ShortURLlink");
+  Url.select();
+  document.execCommand("Copy");
+}

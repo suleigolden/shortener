@@ -1,5 +1,5 @@
 <?php
-//Including Database Connection file
+//Including Database Connection
 include_once("db_connection.php");
 
 class User_URL_Link {
@@ -29,6 +29,7 @@ public function checkValidURL($url){
         return "false";
   }
 }
+
 //Insert Short into database
 public function insertShort($url,$short,$connection){
     //Check if we already have this URL in the database
@@ -80,13 +81,13 @@ public function RetrieveShortener($url,$connection){
       $date = $rows['DateRegistered'];
     }
 $u_Shorten = '<div style="width:44%; background-color: #FFF; padding: 19px;">
-<p style="color: #337ab7; font-size:22px; text-decoration: none; background-color: #CCC; padding:4px; border:0px;">
-sportket.com/short/'.$shorten.'
-</p>
+<input type="text" readonly="true" id="ShortURLlink"  style="color: #337ab7; font-size:22px; text-decoration: none; background-color: #CCC; padding:4px; border:0px;" value="sportket.com/short/'.$shorten.'">
+<button onClick="copyShortURL();" title="Copy short URL">Copy text</button>
 </div>
 ';
 echo $u_Shorten;
 }
+
 
 
 
