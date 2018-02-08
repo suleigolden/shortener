@@ -5,6 +5,8 @@ $userRequest = new User_URL_Link();
 
 if(isset($_POST['SendlinkUrl'])){
  $userRequest ->  short_URL($connection);
+}else if(isset($_POST['redirectUserOriginalURL'])){
+ $userRequest ->  redirectTo_OriginalURL($connection);
 }else{
   //echo "string";
 }
