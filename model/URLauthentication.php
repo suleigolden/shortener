@@ -85,7 +85,11 @@ $u_Shorten = '<div style="width:44%; background-color: #FFF; padding: 19px;">
 <button onClick="copyShortURL();" title="Copy short URL">Copy text</button>
 <br><br>
 <div style="width:65%;">
-    <h1 style="color:#000; border:1px #CCC solid; padding:4px;">Total Clicks: '.$Clicks.'</h1>
+
+    <h1 style="color:#000; border:1px #CCC solid; padding:4px;">
+	Total Clicks: '.$Clicks.'
+	</h1>
+	
 </div>
 <iframe src="'.$OriginalUrl.'" style="width:70%;"></iframe>
 <hr>
