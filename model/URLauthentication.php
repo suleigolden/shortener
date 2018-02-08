@@ -29,17 +29,6 @@ public function checkValidURL($url){
         return "false";
   }
 }
-
-/**
-public function checkShortID($short){
-   $sql_1 = mysqli_query($connection,"SELECT * FROM urls WHERE Short_Url= '$short' ");
-  $check_short = mysqli_num_rows($sql_1);
-  if($check_short > 0){
-    return "true";
-  }else{
-    return "false";
-  }
-}**/
 //Insert Short into database
 public function insertShort($url,$short,$connection){
     //Check if we already have this URL in the database
