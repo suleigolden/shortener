@@ -1,0 +1,45 @@
+.body_image{
+   background: #000 url(images/body_img.png) top center no-repeat;
+   background-attachment: fixed;
+}
+.container{
+	 position: relative;
+	 display: table;
+	 padding:9px;
+	 display: table;
+	 width: 768px;
+	 margin-top:200px;
+   height:auto;
+	 }
+@media (min-width: 768px) {
+  .container {
+    width: 97%;
+  }
+}
+.inputeurl{
+	float: left;
+    width: 40%;
+    height: 38px;
+	
+    padding: 0 18px;
+    font-size: 18px;
+    border-radius: 3px 3px 0px 0px;
+    border: none;
+	}
+.sort_btn{
+	margin-left:-20px;
+	padding: 10px 16px;
+    font-size: 18px;
+    height: 39px;
+    border-radius: 1px 1px 3px 3px;
+	color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+	}
+.sort_btn:hover{
+	 background-color: green;
+}
+.headtitle{
+	text-align:left;
+	color:#FFF;
+}
