@@ -27,3 +27,22 @@ function copyShortURL(){
   Url.select();
   document.execCommand("Copy");
 }
+function RedirectShortURLTouserLink(short) {
+  var hr = new XMLHttpRequest();
+  var url = "controller/send_URLauthentication.php";
+  var linkUrl = "redirectUserOriginalURL="+short;
+  hr.open("POST", url, true);
+  hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  hr.onreadystatechange = function() {
+    if (hr.readyState == 4 && hr.status == 200) {
+      var return_data = hr.responseText;
+      if(return_data =="shortNotFound"){
+        _("errorMessage").style.display ="block";
+        _("RedirectMessage").style.display ="none";
+      }else{
+         window.location = "https://havecv.com/blog";
+      }
+    }
+  }
+ hr.send(linkUrl);
+}
