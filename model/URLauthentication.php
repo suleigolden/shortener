@@ -84,8 +84,8 @@ $u_Shorten = '<div style="width:44%; background-color: #FFF; padding: 19px;">
 <input type="text" readonly="true" id="ShortURLlink"  style="color: #337ab7; font-size:22px; text-decoration: none; background-color: #CCC; padding:4px; border:0px;" value="sportket.com/short/'.$shorten.'">
 <button onClick="copyShortURL();" title="Copy short URL">Copy text</button>
 <br><br>
-<iframe src="'.$OriginalUrl.'" style="width:70%;">
-</iframe>
+<iframe src="'.$OriginalUrl.'" style="width:70%;"></iframe>
+<hr>
 <a href="'.$OriginalUrl.'" style="color: #337ab7; font-size:22px; text-decoration: none;"">'.$OriginalUrl.'</a>
 </div>
 ';
