@@ -14,6 +14,7 @@ function ShortURL() {
       _("url_status").innerHTML = "<label style='color:#F00; background-color:#FFF; '>"+return_data+"</label>";
     }
   }
+
  if(link==null || link=="" || link==" "){
  _("url_status").innerHTML = "<label style='color:#F00; background-color:#FFF; padding:4px;'>Type in URL.</label>";
   }else{
@@ -21,11 +22,6 @@ function ShortURL() {
   _("url_status").innerHTML =
     "<label style='color:#5cb85c; margin-top:- 29px;'>Shorting URL.........</label>";
   }
-}
-function copyShortURL(){
-  var Url = _("ShortURLlink");
-  Url.select();
-  document.execCommand("Copy");
 }
 function RedirectShortURLTouserLink(short) {
   var hr = new XMLHttpRequest();
@@ -40,9 +36,14 @@ function RedirectShortURLTouserLink(short) {
         _("errorMessage").style.display ="block";
         _("RedirectMessage").style.display ="none";
       }else{
-         window.location = "https://havecv.com/blog";
+         window.location = return_data;
       }
     }
   }
  hr.send(linkUrl);
+}
+function copyShortURL(){
+  var Url = _("ShortURLlink");
+  Url.select();
+  document.execCommand("Copy");
 }
