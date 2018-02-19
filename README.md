@@ -38,7 +38,7 @@
 	
 	
 	#Live/Online Testing
-	Visit  https://www.sportket.com/short
+	Visit  https://havecv.com/shortener/
 
 	#How it's works
 	1. Copy and past or type your URL in the provided space
