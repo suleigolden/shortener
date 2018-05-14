@@ -38,7 +38,7 @@
 	
 	
 	#Live/Online Testing
-	Visit  https://havecv.com/shortener/
+	Visit  https://thelastcodebender.com/urlsortner
 
 	#How it's works
 	1. Copy and past or type your URL in the provided space
@@ -47,7 +47,7 @@
 	4. Click on copy to copy your shortener or highlight and copy your shortener
 	NOTE: You will see the link (original web link) that you shorte automatically embedded bellow the result.
 
-	#Question
+	#Question/More Information
     1.if the app becomes famous and you have 10,000 people trying to 
 	  shorten urls every minute, what would the bottlenecks be?
     2.how would you work around these bottlenecks?
